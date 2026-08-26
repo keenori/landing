@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#050607">
   <meta name="color-scheme" content="dark">
   <title>keenori — A solar aircraft for persistent connectivity</title>
-  <meta name="description" content="Keenori is developing AURA: a high-altitude solar aircraft for research, IoT data relay and deployable private networks at 22 km.">
+  <meta name="description" content="Keenori is developing AURA: a high-altitude solar aircraft for research, IoT data relay and deployable private networks at 16–22 km.">
   <meta property="og:title" content="keenori — A solar aircraft for persistent connectivity">
   <meta property="og:description" content="Persistent research and data relay for IoT, autonomous systems and private regional networks.">
   <meta property="og:type" content="website">
@@ -198,6 +198,12 @@
     .about-main h2 { margin: 0; font-size: clamp(3.3rem,8vw,8.5rem); font-weight: 300; line-height: .92; letter-spacing: -.065em; }
     .about-main h2 span { color: var(--muted); }
     .about-main .lead { max-width: 700px; margin: 2.4rem auto 0; }
+    .founder { max-width: 700px; margin: 3rem auto 0; padding: 1.5rem 0; display: flex; align-items: center; justify-content: space-between; gap: 2rem; border-block: 1px solid var(--line); text-align: left; }
+    .founder-label { margin: 0 0 .7rem; color: var(--lime); font: 500 .56rem/1 var(--mono); letter-spacing: .15em; text-transform: uppercase; }
+    .founder h3 { margin: 0; font-size: clamp(1.35rem, 2.5vw, 2rem); font-weight: 400; line-height: 1.1; letter-spacing: -.025em; }
+    .founder-role { margin: .55rem 0 0; color: var(--muted); font-size: .85rem; }
+    .founder-link { flex: 0 0 auto; color: var(--soft); font: 500 .62rem/1 var(--mono); letter-spacing: .11em; text-decoration: none; text-transform: uppercase; }
+    .founder-link:hover { color: var(--lime); }
     .contact-actions { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 2.6rem; }
     .email { display: inline-flex; align-items: center; gap: 1rem; padding: .85rem 1.1rem; border: 1px solid var(--lime); color: var(--ink); background: rgba(158,221,71,.055); font: 500 .72rem/1 var(--mono); letter-spacing: .11em; text-decoration: none; text-transform: uppercase; cursor: pointer; }
     .email::after { content: "↗"; color: var(--lime); }
@@ -231,6 +237,7 @@
       .profile-plot { min-height: 230px; }.profile-data { grid-template-columns: 1fr 1fr; }
       .dt-capture { margin-inline: calc(var(--gutter) * -.5); }.dt-capture figcaption { position: static; border: 0; border-top: 1px solid #273243; }
       .workflow-track { grid-template-columns: 1fr; }.workflow-track::before { height: 52%; }.workflow-step,.workflow-step+.workflow-step { min-height: 0; padding: 1.5rem 0; border-right: 0; }.workflow-step h4 { margin-top: 1.2rem; }
+      .founder { align-items: flex-start; flex-direction: column; gap: 1.2rem; }
       .applications { grid-template-columns: 1fr 1fr; }.applications span { font-size: .53rem; }
       footer { flex-direction: column; gap: .7rem; }
     }
@@ -256,7 +263,7 @@
         <div class="hero-copy">
           <p class="hero-label" data-i18n="heroLabel">keenori / AURA programme</p>
           <h1 id="hero-title" data-i18n="heroTitle"><span>A solar aircraft</span><span>for persistent connectivity.</span></h1>
-          <p class="hero-intro" data-i18n="heroIntro">AURA is being developed to operate at 22 km and remain on station using solar energy. Its first mission: make research and data relay for IoT and autonomous systems faster to deploy, locally controlled and accessible beyond fixed infrastructure.</p>
+          <p class="hero-intro" data-i18n="heroIntro">AURA is being developed to operate at 16–22 km and remain on station using solar energy. Its first mission: make research and data relay for IoT and autonomous systems faster to deploy, locally controlled and accessible beyond fixed infrastructure.</p>
         </div>
         <aside class="config-card" aria-label="Current aircraft configuration" data-i18n-aria-label="configurationAria"><span><i class="live-dot"></i><span data-i18n="currentConfiguration">Current configuration</span></span><strong>AURA NOD SN01</strong><span data-i18n="developmentModel">Development model / Rev. evolving</span></aside>
         <div class="hero-foot">
@@ -270,7 +277,7 @@
       <div class="shell">
         <div class="aircraft-head">
           <div class="reveal"><p class="eyebrow" data-i18n="aircraftEyebrow">02 / The aircraft</p><h2 class="display" data-i18n="aircraftTitle">Above the ground.<br><em>Inside the network.</em></h2><div class="altitude"><b>22</b><span data-i18n="altitudeLabel">kilometres<br>design altitude</span></div></div>
-          <div class="reveal"><p class="lead" data-i18n="aircraftLead">At 22 km, AURA can provide line-of-sight coverage up to 180 km in diameter. Unlike a satellite passing overhead, it is designed to remain continuously above the same geographic point and maintain a direct link with ground stations, sensors and autonomous systems.</p><div class="coverage-stat"><b>≤180 km</b><span data-i18n="coverageLabel">potential coverage<br>diameter</span></div></div>
+          <div class="reveal"><p class="lead" data-i18n="aircraftLead">AURA operates at altitudes of 16–22 km with a radio horizon of up to 560 km. The system's practical coverage area is approximately 180 km in diameter. Unlike a satellite, AURA can remain on station over a defined geographic area for extended periods and maintain communications with terrestrial, airborne and maritime users.</p><div class="coverage-stat"><b>≤180 km</b><span data-i18n="coverageLabel">practical coverage<br>diameter</span></div></div>
         </div>
         <div class="relay-diagram reveal" aria-label="AURA connectivity relay diagram" data-i18n-aria-label="relayAria">
           <span class="diagram-caption" data-i18n="diagramCaption">Up to 180 km diameter<br>Persistent regional coverage</span>
@@ -333,7 +340,7 @@
     </section>
 
     <section class="about" id="contact">
-      <div class="shell"><div class="about-main reveal"><p class="eyebrow">06 / keenori</p><h2>keenori <span>lab.</span></h2><p class="lead" data-i18n="aboutLead">Keenori is an independent engineering R&amp;D company in Ukraine. We are developing a high-altitude solar aircraft and the digital tools behind it to make persistent research and data relay practical, deployable and more accessible.</p><div class="contact-actions"><a class="email" href="mailto:info@keenori.com?subject=Keenori%20AURA%20inquiry" data-i18n="sendEmail">Send an email</a><button class="copy-email" type="button" data-email="info@keenori.com" aria-live="polite" data-i18n="copyEmail">Copy info@keenori.com</button></div></div><footer><span>© <span id="year">2026</span> keenori</span><span data-i18n="location">Kyiv · Ukraine</span><a href="#top" data-i18n="backToTop">Back to top ↑</a></footer></div>
+      <div class="shell"><div class="about-main reveal"><p class="eyebrow">06 / keenori</p><h2>keenori <span>lab.</span></h2><p class="lead" data-i18n="aboutLead">Keenori is an independent engineering R&amp;D company in Ukraine. We are developing a high-altitude solar aircraft and the digital tools behind it to make persistent research and data relay practical, deployable and more accessible.</p><div class="founder"><div><p class="founder-label" data-i18n="founderLabel">Founder</p><h3 data-i18n="founderName">Viktor Musiienko</h3><p class="founder-role" data-i18n="founderRole">Founder &amp; Chief Systems Engineer</p></div><a class="founder-link" href="https://www.linkedin.com/in/musiienko" target="_blank" rel="noreferrer" aria-label="Viktor Musiienko on LinkedIn" data-i18n-aria-label="founderLinkedInAria">LinkedIn ↗</a></div><div class="contact-actions"><a class="email" href="mailto:info@keenori.com?subject=Keenori%20AURA%20inquiry" data-i18n="sendEmail">Send an email</a><button class="copy-email" type="button" data-email="info@keenori.com" aria-live="polite" data-i18n="copyEmail">Copy info@keenori.com</button></div></div><footer><span>© <span id="year">2026</span> keenori</span><span data-i18n="location">Kyiv · Ukraine</span><a href="#top" data-i18n="backToTop">Back to top ↑</a></footer></div>
     </section>
   </main>
 
@@ -341,16 +348,16 @@
     const translations = {
       en: {
         pageTitle: `keenori — A solar aircraft for persistent connectivity`,
-        metaDescription: `Keenori is developing AURA: a high-altitude solar aircraft for research, IoT data relay and deployable private networks at 22 km.`,
+        metaDescription: `Keenori is developing AURA: a high-altitude solar aircraft for research, IoT data relay and deployable private networks at 16–22 km.`,
         navAircraft: `Aircraft`, navMission: `Mission`, navEngineering: `Engineering`, navHorizon: `Horizon`, navContact: `Contact ↗`,
         heroLabel: `keenori / AURA programme`, heroTitle: `<span>A solar aircraft</span><span>for persistent connectivity.</span>`,
         heroAlt: `AURA solar high-altitude aircraft with integrated photovoltaic wing and compact electric propulsion above Earth`, configurationAria: `Current aircraft configuration`,
-        heroIntro: `AURA is being developed to operate at 22 km and remain on station using solar energy. Its first mission: make research and data relay for IoT and autonomous systems faster to deploy, locally controlled and accessible beyond fixed infrastructure.`,
+        heroIntro: `AURA is being developed to operate at 16–22 km and remain on station using solar energy. Its first mission: make research and data relay for IoT and autonomous systems faster to deploy, locally controlled and accessible beyond fixed infrastructure.`,
         currentConfiguration: `Current configuration`, developmentModel: `Development model / Rev. evolving`, exploreAircraft: `Explore the aircraft`,
         designAltitude: `Design altitude`, currentSpan: `Current span`, aspectRatio: `Aspect ratio`,
         aircraftEyebrow: `02 / The aircraft`, aircraftTitle: `Above the ground.<br><em>Inside the network.</em>`, altitudeLabel: `kilometres<br>design altitude`,
-        aircraftLead: `At 22 km, AURA can provide line-of-sight coverage up to 180 km in diameter. Unlike a satellite passing overhead, it is designed to remain continuously above the same geographic point and maintain a direct link with ground stations, sensors and autonomous systems.`,
-        coverageLabel: `potential coverage<br>diameter`, diagramCaption: `Up to 180 km diameter<br>Persistent regional coverage`, baseStation: `Base station`, marineDrones: `Marine drones`, iotDevices: `IoT devices`,
+        aircraftLead: `AURA operates at altitudes of 16–22 km with a radio horizon of up to 560 km. The system's practical coverage area is approximately 180 km in diameter. Unlike a satellite, AURA can remain on station over a defined geographic area for extended periods and maintain communications with terrestrial, airborne and maritime users.`,
+        coverageLabel: `practical coverage<br>diameter`, diagramCaption: `Up to 180 km diameter<br>Persistent regional coverage`, baseStation: `Base station`, marineDrones: `Marine drones`, iotDevices: `IoT devices`,
         relayAria: `AURA connectivity relay diagram`, diagramAria: `Top view technical outline of AURA NOD SN01 with leading-edge propellers, rectangular horizontal tail and nose relay module`,
         networkEyebrow: `03 / Why keep an aircraft there?`, networkTitle: `A network where <em>you need it.</em>`,
         networkLead: `Satellites provide enormous reach, but they are not always the right infrastructure for a local mission. A high-altitude aircraft adds a deployable layer: persistent research and data relay centred on the region that needs it.`,
@@ -373,21 +380,22 @@
         horizonEyebrow: `05 / Where this can go`, horizonTitle: `Connectivity is <em>the first mission.</em>`, appIoT: `IoT data relay`, appResearch: `Environmental research`, appEmergency: `Emergency networks`, appAir: `UAV &amp; UGV links`, appMarine: `Marine drone links`, appPrivate: `Private infrastructure`,
         horizonNote: `We see high-altitude solar aircraft as a new layer between terrestrial infrastructure and satellites — <em>deployable where persistent coverage, accessible data and local control matter.</em>`,
         aboutLead: `Keenori is an independent engineering R&amp;D company in Ukraine. We are developing a high-altitude solar aircraft and the digital tools behind it to make persistent research and data relay practical, deployable and more accessible.`,
+        founderLabel: `Founder`, founderName: `Viktor Musiienko`, founderRole: `Founder &amp; Chief Systems Engineer`, founderLinkedInAria: `Viktor Musiienko on LinkedIn`,
         sendEmail: `Send an email`, copyEmail: `Copy info@keenori.com`, emailCopied: `Email copied`, location: `Kyiv · Ukraine`, backToTop: `Back to top ↑`,
         openMenu: `Open navigation`, closeMenu: `Close navigation`, navigationLabel: `Primary navigation`, languageLabel: `Language`
       },
       uk: {
         pageTitle: `keenori — Сонячний літак для постійного зв’язку`,
-        metaDescription: `Keenori розробляє AURA — висотний сонячний літак для досліджень, ретрансляції даних IoT і розгортання приватних мереж на висоті 22 км.`,
+        metaDescription: `Keenori розробляє AURA — висотний сонячний літак для досліджень, ретрансляції даних IoT і розгортання приватних мереж на висотах 16–22 км.`,
         navAircraft: `Літак`, navMission: `Місія`, navEngineering: `Інженерія`, navHorizon: `Перспектива`, navContact: `Контакти ↗`,
         heroLabel: `keenori / програма AURA`, heroTitle: `<span>Сонячний літак</span><span>для постійного зв’язку.</span>`,
         heroAlt: `Висотний сонячний літак AURA з інтегрованими фотоелектричними панелями та компактною електричною силовою установкою над Землею`, configurationAria: `Поточна конфігурація літака`,
-        heroIntro: `AURA розробляється для роботи на висоті 22 км і тривалого перебування над заданою точкою завдяки сонячній енергії. Перша місія — зробити дослідження та ретрансляцію даних для IoT і автономних систем швидшими в розгортанні, локально керованими й доступними поза межами стаціонарної інфраструктури.`,
+        heroIntro: `AURA розробляється для роботи на висотах 16–22 км і тривалого перебування над заданою точкою завдяки сонячній енергії. Перша місія — зробити дослідження та ретрансляцію даних для IoT і автономних систем швидшими в розгортанні, локально керованими й доступними поза межами стаціонарної інфраструктури.`,
         currentConfiguration: `Поточна конфігурація`, developmentModel: `Модель у розробці / ревізія уточнюється`, exploreAircraft: `Дослідити літак`,
         designAltitude: `Розрахункова висота`, currentSpan: `Поточний розмах`, aspectRatio: `Відносне видовження`,
         aircraftEyebrow: `02 / Літак`, aircraftTitle: `Над землею.<br><em>Всередині мережі.</em>`, altitudeLabel: `кілометри<br>розрахункової висоти`,
-        aircraftLead: `На висоті 22 км AURA може забезпечувати пряму видимість у зоні покриття до 180 км у діаметрі. На відміну від супутника, що пролітає над регіоном, літак має постійно залишатися над тією самою географічною точкою та підтримувати прямий зв’язок із наземними станціями, сенсорами й автономними системами.`,
-        coverageLabel: `потенційний діаметр<br>покриття`, diagramCaption: `До 180 км у діаметрі<br>Постійне регіональне покриття`, baseStation: `Базова станція`, marineDrones: `Морські дрони`, iotDevices: `IoT-пристрої`,
+        aircraftLead: `AURA працює на висотах 16–22 км із радіогоризонтом до 560 км. Практична зона покриття становить близько 180 км у діаметрі. На відміну від супутника, AURA може тривало утримуватися в районі заданої географічної точки та підтримувати зв’язок із наземними, повітряними й морськими абонентами.`,
+        coverageLabel: `практичний діаметр<br>покриття`, diagramCaption: `До 180 км у діаметрі<br>Постійне регіональне покриття`, baseStation: `Базова станція`, marineDrones: `Морські дрони`, iotDevices: `IoT-пристрої`,
         relayAria: `Схема ретрансляції зв’язку через AURA`, diagramAria: `Технічний вигляд AURA NOD SN01 зверху з пропелерами на передній кромці, прямокутним горизонтальним оперенням і носовим модулем зв’язку`,
         networkEyebrow: `03 / Навіщо утримувати літак там?`, networkTitle: `Мережа там, <em>де вона потрібна.</em>`,
         networkLead: `Супутники забезпечують величезне охоплення, але не завжди є оптимальною інфраструктурою для локальної місії. Висотний літак додає рівень, який можна розгорнути над потрібним регіоном для постійних досліджень і ретрансляції даних.`,
@@ -410,6 +418,7 @@
         horizonEyebrow: `05 / Подальші можливості`, horizonTitle: `Зв’язок — <em>це перша місія.</em>`, appIoT: `Ретрансляція даних IoT`, appResearch: `Екологічні дослідження`, appEmergency: `Аварійні мережі`, appAir: `Зв’язок із UAV та UGV`, appMarine: `Зв’язок із морськими дронами`, appPrivate: `Приватна інфраструктура`,
         horizonNote: `Ми розглядаємо висотні сонячні літаки як новий рівень між наземною інфраструктурою та супутниками — <em>який можна розгорнути там, де важливі постійне покриття, доступність даних і локальний контроль.</em>`,
         aboutLead: `Keenori — незалежна українська інженерна R&amp;D-компанія. Ми розробляємо висотний сонячний літак і цифрові інструменти для нього, щоб зробити постійні дослідження та ретрансляцію даних практичними, швидкими в розгортанні й доступнішими.`,
+        founderLabel: `Засновник`, founderName: `Віктор Мусієнко`, founderRole: `Засновник і головний системний інженер`, founderLinkedInAria: `Віктор Мусієнко у LinkedIn`,
         sendEmail: `Написати листа`, copyEmail: `Копіювати info@keenori.com`, emailCopied: `Адресу скопійовано`, location: `Київ · Україна`, backToTop: `На початок ↑`,
         openMenu: `Відкрити навігацію`, closeMenu: `Закрити навігацію`, navigationLabel: `Основна навігація`, languageLabel: `Мова`
       }
